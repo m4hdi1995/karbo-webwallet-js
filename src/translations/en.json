@@ -1,7 +1,7 @@
 {
   "website":{
-	"title":"Client-side Karbo Web Wallet",
-	"description":"Official online wallet for Karbo currency - fully handled in your browser for optimal security"
+	"title":"Official ParsiCoin Web Wallet",
+	"description":"Official online wallet for ParsiCoin currency - anonymous, secured, and fully handled in your browser for optimal security"
   },
   "messages": {
 	"menu": {
@@ -55,7 +55,6 @@
 	},
 	"bottom": {
 	  "termsOfUse": "Terms of Use",
-	  "privacyPolicy": "Privacy Policy",
 	  "support": "Support",
 	  "donate": "Donate",
 	  "network": "Network Stats",
@@ -63,8 +62,8 @@
 	  "github": "GitHub"
 	},
 	"homepage": {
-	  "mainTitle": "Secure Karbo Wallet",
-	  "tagLine": "The simplest way to use Karbo – anywhere and any time",
+	  "mainTitle": "Secured ParsiCoin Wallet",
+	  "tagLine": "The simplest way to use ParsiCoin - anywhere and any time",
 	  "actions": {
 		"loadWallet": "Load my wallet",
 		"importWallet": "Import a wallet",
@@ -81,12 +80,12 @@
 		  "description": "Send Everywhere, Anytime!"
 		},
 		"technology": {
-		  "title": "Local",
-		  "description": "Keys on your device"
+		  "title": "Unique Technology",
+		  "description": "Connected directly to the ParsiCoin blockchain!"
 		},
 		"openSource": {
-		  "title": "Open-source",
-		  "description": "Verify on Github!"
+		  "title": "Fully Open-source",
+		  "description": "Available on Github!"
 		}
 	  }
 	},
@@ -106,15 +105,14 @@
 		"emptyWallet": "You currently have no funds in this wallet.",
 		"waitSync": "Please wait until the wallet is updated",
 		"beReallyPatient": "The initial setup can take some time...",
-		"getCoinAddress": "Receive KRB"
+		"getCoinAddress": "Receive PARS"
 	  },
 	  "txDetails":{
 		"title":"Transaction details",
 		"txHash":"Tx hash",
 		"feesOnTx":"Tx fees",
 		"blockHeight":"Block height",
-		"paymentId":"Payment ID",
-		"txPrivKey":"Transaction Private Key"
+		"paymentId":"Payment ID"
 	  }
 	},
 	"changeWalletPasswordPage":{
@@ -143,7 +141,7 @@
 	  },
 	  "finalizationStep":{
 		"title":"That was simple. Your account is ready!",
-		"subtitle":"Be ready to use Karbo like you never have",
+		"subtitle":"Be ready to use ParsiCoin like you never have",
 		"passwordSelectionBlock":{
 		  "label":"Protect your wallet"
 		},
@@ -166,8 +164,8 @@
 		}
 	  },
 	  "disclaimerBlock":{
-		"title":"Risk of Using KarboWallet",
-		"content":"KarboWallet is a web-based interface. It helps you use Karbo without running a full Karbo node. <br/>We recommend you treat KarboWallet like you will treat your actual wallet."
+		"title":"Risk of Using ParsiCoinWallet",
+		"content":"ParsiCoinWallet is a web-based interface. It helps you use ParsiCoin without running a full ParsiCoin node. <br/>We recommend you treat ParsiCoinWallet like you will treat your actual wallet."
 	  }
 	},
 	"donatePage":{
@@ -175,11 +173,11 @@
 	  "subtitle":"Help to fund the development and pay the bills",
 	  "webwalletBlock":{
 		"title":"Webwallet",
-		"content":"If you want to help to pay for the servers, to support new features development, and like this app, please consider a donation: <br/><br/>"
+		"content":"This Web wallet is developed by ParsiCoin Devs.<br/>If you want to help the development, please consider a donation: <br/><br/>"
 	  },
-	  "devFundBlock":{
-		"title":"Karbo Dev fund",
-		"content":"To help Karbo, you can donate at these addresses"
+	  "masariFundBlock":{
+		"title":"ParsiCoin Dev fund",
+		"content":"To help ParsiCoin, you can donate at these addresses"
 	  }
 	},
 	"supportPage":{
@@ -188,12 +186,12 @@
 	  "getInTouchBlock":{
 		"title":"Let's Get In Touch!",
 		"content":"Do you have ideas or feedback that could help us improve the wallet? Contact us!",
-		"discord":"Karbo Discord Channel"
+		"discord":"ParsiCoin Discord Channel"
 	  }
 	},
 	"networkPage":{
 	  "title":"Network stats",
-	  "subtitle":"Insights on the Karbo network",
+	  "subtitle":"Insights on the ParsiCoin network",
 	  "statsBlock":{
 		"hashrate":"Network hashrate",
 		"height":"Blockchain height",
@@ -203,11 +201,10 @@
 	  }
 	},
 	"sendPage":{
-	  "title":"Send KRB",
+	  "title":"Send PARS",
 	  "sendBlock":{
 		"address":{
 		  "label":"Destination address",
-		  "placeholder":"Write the address where you want to send funds",
 		  "invalid":"The destination address is invalid",
 		  "fundsTo":"The funds will be sent to",
 		  "receiver":"Receiver",
@@ -234,7 +231,7 @@
 	  },
 	  "thankYouDonationModal":{
 		"title":"Thank you for your donation!",
-		"content":"Your help is appreciated. <br/>This donation will help make Karbo better",
+		"content":"Your help is appreciated. This donation will help make ParsiCoin better",
 		"confirmText":"OK"
 	  },
 	  "transferSentModal":{
@@ -271,7 +268,7 @@
 	  }
 	},
 	"receivePage":{
-	  "title":"Receive KRB",
+	  "title":"Receive PARS",
 	  "receiveBlock":{
 		"address":{
 		  "title":"Your address to receive funds:",
@@ -298,23 +295,13 @@
 	  }
 	},
 	"miningPage":{
-	  "title":"Mine directly in your browser",
-	  "subtitle":"Support the network by mining and be rewarded with KRB",
-	  "parameterBlock":{
-		"title":"Parameters",
-		"labelDestinationAddress":"Wallet to mine",
-		"labelThreads":"Number of threads (more = higher hashrate)",
-		"start":"Start",
-		"stop":"Stop"
-	  },
-	  "statisticsBlocks":{
-		"title":"Statistics",
-		"validShares":"Valid shares",
-		"hashrate":"Hashrate",
-		"maxHashrate":"Max Hashrate",
-		"dedicatedHardware":"With dedicating mining software and hardware, you could earn more and help decentralize the network.",
-		"miningHandledBy":"This mining is handled by the mining pool get.masaricoin.com"
-	  }
+	  "title":"Mining information",
+	  "subtitle":"Support the network by mining and be rewarded with PARS",
+    "contentBlock": {
+      "title": "How to get started mining",
+      "intro": "Mining helps decentralise the network and allows you to earn ParsiCoin. There is no need for specialist equipment to mine ParsiCoin.",
+      "linkText": "Click here to download our one click miner."
+    }
 	},
 	"settingsPage":{
 	  "title":"Settings",
@@ -353,7 +340,7 @@
 		"title":"Delete My Wallet (local copy)",
 		"content":"Are you sure you REALLY want to delete your wallet ?",
 		"confirmText":"Yes I'm sure",
-		"cancelText":"Cancel"
+		"cancelButtonText":"Cancel"
 	  }
 	},
 	"importBasePage":{
@@ -394,7 +381,7 @@
 	  },
 	  "warningBlock":{
 		"title":"Warning",
-		"content":"If you choose to save your private keys or your mnemonic phrase, PLEASE DO NOT store them in clear-text for your own safety.<br/>The file is an alternate solution where your keys are encrypted and contains a backup of all your transactions to spare you a future synchronisation."
+		"content":"If you choose to save your private keys or your mnemonic phrase, PARSASE DO NOT store them in clear-text for your own safety.<br/>The file is an alternate solution where your keys are encrypted and contains a backup of all your transactions to spare you a future synchronisation."
 	  },
 	  "exportBlock":{
 		"title":"Export your RAW credentials",
@@ -430,10 +417,6 @@
 	  "title":"Terms of use",
 	  "subtitle":"Please read them carefully."
 	},
-	"privacyPolicyPage":{
-	  "title":"Privacy Policy",
-	  "subtitle":"Please read them carefully."
-	},
 	"importFromFilePage":{
 	  "title":"Importing wallet from a backup file",
 	  "subtitle":"Use your backup file to create a wallet",
@@ -460,9 +443,10 @@
 	  "title":"Importing wallet from keys",
 	  "subtitle":"Use your keys to create a wallet",
 	  "parametersBlock":{
-		"viewOnlyWallet":{
-		  "label":"Do you want a view only wallet?"
-		}
+      "viewOnlyWallet": {
+        "label": "Do you want a view only wallet?",
+        "info": "Please note that View Only wallets can only track incoming transactions, so your wallet balance may appear inflated!"
+      }
 	  },
 	  "keysBlock":{
 		"titleNotViewOnly":"Wallet keys",
