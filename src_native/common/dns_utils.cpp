@@ -358,14 +358,14 @@ std::string address_from_txt_record(const std::string& s)
   auto pos2 = s.find(";", pos);
   if (pos2 != std::string::npos)
   {
-    // length of address == 97, we can at least validate that much here
-    if (pos2 - pos == 97)
+    // length of address == 98, we can at least validate that much here
+    if (pos2 - pos == 98)
     {
-      return s.substr(pos, 97);
+      return s.substr(pos, 98);
     }
-    else if (pos2 - pos == 108) // length of address == 106 --> integrated address
+    else if (pos2 - pos == 98) // length of address == 109 --> integrated address
     {
-      return s.substr(pos, 108);
+      return s.substr(pos, 98);
     }
   }
   return {};
