@@ -414,8 +414,8 @@ export class TransactionsExplorer {
 			//	neededFee = newNeededFee;
 			//}
 
-            if (neededFee < 1000000000) {
-                neededFee = 1000000000;
+            if (neededFee < 1000000000000) {
+                neededFee = 1000000000000;
             }
 
 			// neededFee = neededFee / 3 * 2;
