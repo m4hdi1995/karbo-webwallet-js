@@ -1,5 +1,10 @@
-# How to compile & Deploy
+# How to compile & Deploy on Ubuntu 18.04
 The project is using Typescript as main language and not other dependencies on external libraries (everything is already included).
+
+# requirements
+```
+apt update && apt upgrade -y && apt install nodejs npm apache2 php -y
+```
 
 # Compilation
 The first step will be to compile the typescript code into javascript code so browsers will be able to understand it. 
@@ -23,18 +28,18 @@ That's all
 All the content of the src directory needs to be exposed with a web-server.
 You will also need to expose the content of the src_api content to an endpoint which can interpret PHP.
 By default the configuration looks at domainname.com/api/
-
-
+you need to run parsicoind with the following flags :
+```
+./parsicoind --restricted-rpc --enable-cors=* --enable-blockchain-indexes --rpc-bind-ip=0.0.0.0
+```
 # Permissions
 The API stores precomputed data for performances in a directory called cache/ in the same directory of the API code (PHP code).
 You will need to create this directory with the write permissions.
 
 # Cron task / Process
 Precomputed data are build by another process. This process will call the ParsiCoin daemon and compute blocks into chunks of blocks to reduce network latency.
-In order to do so, you will need to run the file blockchain.php with an environment variable "export=true". 
-This file will shut down after 1h, and has a anti-concurrency mechanism built in.
 
-One way to handle this is by running a cron task each minute with something like:
+One way to handle this is by running a cron task each 10 minute with something like:
 ```
-* * * * * root cd /var/www/domain.com/api && export generate=true && php blockchain.php
+*/10 * * * * root curl https://wallet.domainname.com/api/blockchain.php?gen=1
 ```
