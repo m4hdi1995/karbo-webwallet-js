@@ -3,7 +3,7 @@ The project is using Typescript as main language and not other dependencies on e
 
 # requirements
 ```
-apt update && apt upgrade -y && apt install nodejs npm apache2 php -y
+apt update && apt upgrade -y && apt install nodejs npm apache2 php php-curl -y
 ```
 
 # Compilation
