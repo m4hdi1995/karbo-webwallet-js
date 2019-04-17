@@ -41,5 +41,5 @@ Precomputed data are build by another process. This process will call the ParsiC
 
 One way to handle this is by running a cron task each 10 minute with something like:
 ```
-*/10 * * * * root curl https://wallet.domainname.com/api/blockchain.php?gen=1
+*/2 * * * * root curl https://wallet.domainname.com/api/blockchain.php?gen=1
 ```
