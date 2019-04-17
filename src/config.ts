@@ -8,18 +8,18 @@ global.config = {
 	testnetExplorerUrlHash: "http://testnet.parsicoin.net/?hash={ID}#blockchain_transaction",
 	testnetExplorerUrlBlock: "http://testnet.parsicoin.net/?hash={ID}#blockchain_block",
 	testnet: false,
-    coinUnitPlaces: 8,
+    coinUnitPlaces: 12,
     coinDisplayUnitPlaces: 2,
-	txMinConfirms: 6,         
-	txCoinbaseMinConfirms: 6,
-	addressPrefix: 0xf5,
+	txMinConfirms: 10,         
+	txCoinbaseMinConfirms: 10,
+	addressPrefix: 0x90004,
 	integratedAddressPrefix: 0,
-	addressPrefixTestnet: 0xf5,
+	addressPrefixTestnet: 0,
 	integratedAddressPrefixTestnet: 0,
 	subAddressPrefix: 0,
 	subAddressPrefixTestnet: 0,
-	coinFee: new JSBigInt('100000000'),
-	feePerKB: new JSBigInt('100000000'), //for testnet its not used, as fee is dynamic.
+	coinFee: new JSBigInt('100000000000'),
+	feePerKB: new JSBigInt('100000000000'), //for testnet its not used, as fee is dynamic.
 	dustThreshold: new JSBigInt('100000000'),//used for choosing outputs/change - we decompose all the way down if the receiver wants now regardless of threshold
 	defaultMixin: 0, // default value mixin
 
